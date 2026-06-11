@@ -4,7 +4,7 @@
 ![Raylib](https://img.shields.io/badge/Library-Raylib-red?style=flat-square)
 ![OOP](https://img.shields.io/badge/Concepts-OOP-green?style=flat-square)
 
-A simple Ping/Pong arcade game built in **C++** using **Raylib** for rendering and real-time interaction.
+A Pong game built in **C++** using **Raylib** with an AI-controlled opponent that automatically tracks and returns the ball. Focuses on game loop design, physics-based collision, and object-oriented structure.
 
 The project focuses on game logic, object-oriented design, and real-time input handling. It helped me understand how game loops, collision detection, and object interactions work in a structured way.
 
@@ -48,13 +48,10 @@ Game
 pong-game-cpp/
 │
 ├── src/
-│   ├── main.cpp
-│   ├── game.cpp 
-│   ├── game.h
-│   ├── paddle.cpp 
-│   ├── paddle.h
-│   ├── ball.cpp 
-│   └── ball.h
+│   └── pong.cpp      # Full game — ball, paddles, AI and game loop
+│
+├── assets/
+│   └── gameplay.png  # Gameplay screenshot
 │
 └── README.md
 ```
@@ -85,6 +82,10 @@ pong-game-cpp/
 g++ -std=c++17 src/main.cpp src/game.cpp src/paddle.cpp src/ball.cpp -o pong-game -lraylib -lopengl32 -lgdi32 -lwinmm
 ./pong-game
 ```
+## 📸 Screenshots
+
+### Gameplay
+![Gameplay](assets/gameplay.png)
 
 ## 👨‍💻 Developer
 
